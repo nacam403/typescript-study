@@ -20,6 +20,6 @@ module.exports = {
     "plugin:prettier/recommended",
   ],
   rules: {
-    // 必要に応じて追加していく。
+    "@typescript-eslint/explicit-function-return-type": "off",
   },
 };
