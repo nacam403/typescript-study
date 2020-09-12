@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "dist",
+    "paths": {
+      "*": [
+        "../../typings/*",
+        "../../node_modules/@types/*",
+        "node_modules/@types/*"
+      ]
+    },
+  },
+  "include": ["src/**/*"]
+}
