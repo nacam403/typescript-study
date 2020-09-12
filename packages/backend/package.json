@@ -10,6 +10,7 @@
     "build": "upbin npm-run-all build:*",
     "build:clean": "upbin rimraf dist",
     "build:tsc": "upbin tsc",
+    "build:copy4lambda": "upbin cpx 'node_modules/**/*' dist/node_modules",
     "test": "upbin jest",
     "lint": "upbin eslint ."
   },
