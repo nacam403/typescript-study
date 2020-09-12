@@ -3,10 +3,12 @@ import * as awsServerlessExpress from "aws-serverless-express";
 
 import { createApp } from "./app";
 
-const appPromise = createApp();
+let server: ReturnType<typeof awsServerlessExpress.createServer>;
 
 export const handler: Handler = async (event, context) => {
-  const app = await appPromise;
-  const server = awsServerlessExpress.createServer(app);
+  if (!server) {
+    const app = await createApp();
+    server = awsServerlessExpress.createServer(app);
+  }
   return awsServerlessExpress.proxy(server, event, context, "PROMISE").promise;
 };
