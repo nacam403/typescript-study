@@ -14,6 +14,6 @@ const vpcStack = new VpcStack(app, "VpcStack", { env });
 const assetCode = new AssetCode(`${__dirname}/../../backend/dist`);
 const backendStack = new BackendStack(app, "BackendStack", {
   env,
-  vpc: vpcStack.vpc,
+  // vpc: vpcStack.vpc,
   assetCode,
 });

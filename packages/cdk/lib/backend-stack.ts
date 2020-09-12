@@ -5,7 +5,7 @@ import * as apigateway from "@aws-cdk/aws-apigateway";
 
 type BackendStackProps = {
   env: cdk.Environment;
-  vpc: ec2.Vpc;
+  vpc?: ec2.Vpc;
   assetCode: lambda.AssetCode;
 } & cdk.StackProps;
 
