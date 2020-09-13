@@ -17,7 +17,8 @@
   "dependencies": {
     "aws-lambda": "^1.0.6",
     "aws-serverless-express": "^3.3.8",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^3.6.2"
   },
   "devDependencies": {
     "@types/aws-serverless-express": "^3.3.3",

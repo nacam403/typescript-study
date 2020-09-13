@@ -6,6 +6,8 @@ import { createApp } from "./app";
 let server: ReturnType<typeof awsServerlessExpress.createServer>;
 
 export const handler: Handler = async (event, context) => {
+  context.callbackWaitsForEmptyEventLoop = false;
+
   if (!server) {
     const app = await createApp();
     server = awsServerlessExpress.createServer(app);
