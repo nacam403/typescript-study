@@ -6,8 +6,6 @@
     "cdk": "bin/cdk.js"
   },
   "scripts": {
-    "build": "upbin tsc",
-    "watch": "upbin tsc -w",
     "test": "upbin jest",
     "lint": "upbin eslint .",
     "cdk": "cdk"
