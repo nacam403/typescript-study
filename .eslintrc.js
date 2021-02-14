@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { readGitignoreFiles } = require("eslint-gitignore");
+
 module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -19,6 +22,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
   ],
+  ignorePatterns: readGitignoreFiles({ cwd: __dirname }),
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
