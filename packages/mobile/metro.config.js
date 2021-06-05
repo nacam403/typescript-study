@@ -12,9 +12,9 @@ const watchFolders = [
 ];
 
 const blockList = [
-  /backend/,
-  /cdk/,
-  /nextjs-study/,
+  /\/backend\//,
+  /\/cdk\//,
+  /\/nextjs-study\//,
 ];
 
 module.exports = {
