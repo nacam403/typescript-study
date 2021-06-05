@@ -4,12 +4,14 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
     "build": "lerna run build",
     "test": "lerna run test",
     "lint": "lerna run lint"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.27",
