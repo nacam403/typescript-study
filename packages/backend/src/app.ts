@@ -22,10 +22,10 @@ export async function createApp() {
   });
 
   app.get("/find", async (_req, res) => {
-    const found: any[] = [];
+    const found: unknown[] = [];
 
     const cursor = client.db("myDB").collection("myCollection").find();
-    await cursor.forEach((document: any) => found.push(document));
+    await cursor.forEach((document: unknown) => found.push(document));
     res.send(found);
   });
 
