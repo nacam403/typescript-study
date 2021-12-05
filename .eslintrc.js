@@ -16,11 +16,7 @@ module.exports = {
     node: true,
   },
   plugins: ["@typescript-eslint"],
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-  ],
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   ignorePatterns: readGitignoreFiles({ cwd: __dirname }),
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off",
