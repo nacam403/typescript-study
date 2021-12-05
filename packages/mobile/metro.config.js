@@ -7,15 +7,9 @@
 
 const path = require('path');
 
-const watchFolders = [
-  path.resolve(__dirname, '../../node_modules'),
-];
+const watchFolders = [path.resolve(__dirname, '../../node_modules')];
 
-const blockList = [
-  /\/backend\//,
-  /\/cdk\//,
-  /\/nextjs-study\//,
-];
+const blockList = [/\/backend\//, /\/cdk\//, /\/nextjs-study\//];
 
 module.exports = {
   transformer: {
